@@ -1,38 +1,195 @@
-.App {
-  text-align: center;
+.nav{
+  background-image: linear-gradient(to right,rgb(30, 32, 51) 40%,#f32170,#d10dd1,rgb(245, 217, 217));
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font{
+  font-family: 'Dancing Script', cursive;  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navname{
+   
+   background: linear-gradient(to right,rgb(238, 8, 47),#cf23cf);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color:transparent;
+  
+}
+ li a:hover{
+      color:black !important;
   }
-}
+  .home{
+      margin: 0;
+      height: 600px;
+     
+  }
+  .heroimg{
+    position: relative;
+    background-image: url("/public/assets/images/devimg1.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .hey{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  .name{
+    font-size: 80px;
+    background: linear-gradient(to right,#f32170,#cf23cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+  }
+  strong{
+    color: rgb(71, 59, 241);
+  }
+  .icon{
+    color: rgb(80, 80, 248);
+  }
+  .icon:hover{
+    opacity: .7;
+    cursor: pointer;
+  }
+  
+  .para{
+    font-size: 25px;
+    line-height: 40px;
+    
+  }
+  .about{
+    margin: 0;
+    background-color:honeydew;
+    min-height: 500px;
+  }
+  .skillimg{
+    height: 50px;
+    width: 70px;
+  }
+  .aboutbg{
+    position: relative;
+    background-image: url("/public/assets/images/devimg7.png");
+    background-position: center;
+    background-size: 650px;
+    background-repeat: no-repeat;
+    height: 630px;
+    background-color: rgb(22, 7, 41)
+    
+  }
+  .aboutbg2{
+    background-color: rgb(22, 7, 41)
+  }
+  .skillsbg{
+    background-image: url("/public/assets/images/nano3.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:1050px;
+  }
+  .skills{
+    gap:50px 100px;
+  }
+  .skillstable{
+    background-color: white;
+    border-radius: 10px;
+  }
+  .skillsh4{
+    margin-left: 20px;
+  }
+  .carousel{
+    height: 400px;
+    width: 500px;
+  }
+  .imgsize{
+    height: 400px;
+  
+  }
+  .button{
+    height: 40px;
+  }
+  .toolsimg{
+    height: 30px;
+    width: 30px;
+  }
+  .projectsbg{
+    background-image: url("/public/assets/images/sky3.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:650px;
+  }
+  .contactbg{
+    background-color: rgb(6, 21, 83);
+    min-height: 600px;
+  }
+  .text{
+    color: white;
+  }
+  .iconcolor{
+    color: #f161c6;
+  }
+  .contacticon:hover{
+    opacity: .7;
+    cursor:pointer;
+  }
+  @media(width>=992px){
+    .contactcol{
+      border-right: 2px solid rgb(248, 244, 244) ;
+    }
+  }
+  
+  .anim{
+    position: relative;
+    animation-name: skillsAnim;
+    animation-duration: 2s;  
+    animation-delay: 0s;
+  }
+  @keyframes skillsAnim {
+   from {bottom: -50px;}
+   to {bottom: 0px;}
+  }
+  .projectimg{
+    height: 300px;
+  }
+  .projecticon{
+    color: blue;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  }
+  .projecticon:hover{
+    opacity: .7;
+    cursor: pointer;
+  }
+  .resume{
+    max-width:270px ;
+   
+  }
+ .resume .resbtn{
+   
+  height: 45px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  background-image: linear-gradient(to right,#d10dd1,#f32170);
   color: white;
+  letter-spacing: .2rem;
+  
+ }
+ .resume .resbtn:hover{
+  color: black;
 }
-
-.App-link {
-  color: #61dafb;
+.contactresume{
+  max-width: 200px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contactresbtn{
+  height: 45px;
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  background-image: linear-gradient(to right,#d10dd1,#f32170);
+  color: white;
+  letter-spacing: .2rem;
+}
+.contactresbtn:hover{
+  color: black;
 }
