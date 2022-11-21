@@ -1,1 +1,1 @@
-export const env={api:"http://localhost:3001"}
+export const env={api:"https://karthi-portfo.herokuapp.com"}
