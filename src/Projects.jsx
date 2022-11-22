@@ -7,10 +7,12 @@ function Projects() {
 
     let projects=[
         {
-            picture:"",
+            image:"cmsapp.png",
             title:"CRM APP",
-            description:"CRM app is fully managed and controlled by authentication system",
-            tools:["mongoDB","express","JasonWebToken"]
+            description:"CRM app has authentication system of Login,Registration and Forgot password.The system has Admin and Employee level access control middlewares.If any leads or service requests are created in the system,it will trigger an email to the manager and admin.",
+            tools:["Context","Express","JWT","Bcryptjs","MongoDB"],
+            github:"https://github.com/KarthiGovindasamy37/crm-app",
+            netlify:"https://melodious-lily-b14447.netlify.app/"
         }
     ]
   return (
@@ -18,13 +20,13 @@ function Projects() {
         
     <div className="d-flex flex-wrap pt-5  ">
         {
-            projects.map((ele)=>{
+            projects.map(ele=>{
                 return(
                     <div className='col-md-6 d-flex justify-content-center'>
                     <div className="card mb-5 " style={{maxWidth: "540px"}}>
                       <div className="row g-0">
-                        <div className="col-md-4">
-                          <img src="/assets/images/aws.png" style={{height:"200px"}} className="img-fluid rounded-start projectimg" alt="..."/>
+                        <div className="col-md-4 project-img-div">
+                          <img src={`/assets/images/${ele.image}`} style={{height:"100%",width:"100%"}} className="img-fluid rounded-start projectimg p-1" alt="..."/>
                         </div>
                         <div className="col-md-8">
                           <div className="card-body">
@@ -33,8 +35,7 @@ function Projects() {
                             <div className="d-flex flex-wrap">
                                 <div className='col-4'><h6>tools used :</h6></div>
                                 <div className='col-8 d-flex flex-wrap '>
-                               
-                              {
+                                {
                                 ele.tools.map((ele)=>{
                                     return(
                                         <h6 className='ms-1 text-danger'>{ele}</h6>
@@ -46,30 +47,25 @@ function Projects() {
                             </div>
                             
                             <div className="d-flex mt-2 ">
-                             <FontAwesomeIcon  className=" projecticon" icon={faGithub} size="2x" />
-                             <FontAwesomeIcon className=' ms-4 projecticon' icon={ faArrowUpRightFromSquare} size="2x" />
+                             <a href={`${ele.github}`} target="_blank"><FontAwesomeIcon  className=" projecticon ms-4" icon={faGithub} size="2x" /></a>
+                             <a href={`${ele.netlify}`}target="_blank"><FontAwesomeIcon className=' ms-5 projecticon' icon={ faArrowUpRightFromSquare} size="2x" /></a>
                               
                             </div>
                           </div>
                         </div>
                       </div>
+                      
+                      
+        
                     </div>
                 </div>
                 
-                )
+                
+              )
             })
-        }
-      
-    
-
-
-
-
-
-
-
-
-    </div>
+}
+        
+     </div>
     </div>
     
   )

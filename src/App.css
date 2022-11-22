@@ -119,6 +119,9 @@
     background-repeat: no-repeat;
     min-height:650px;
   }
+  .project-img-div{
+    min-height: 200px;
+  }
   .contactbg{
     background-color: rgb(6, 21, 83);
     min-height: 600px;
