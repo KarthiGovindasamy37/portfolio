@@ -79,7 +79,7 @@ function Contact() {
       <div className='ms-5 mb-3'><a href="https://www.linkedin.com/in/karthi-govindasamy-456ba699/" target="_blank"><FontAwesomeIcon  className=" text-primary contacticon" icon={faLinkedin} size="2x" /></a></div>
       </div>
       <div className="d-flex mt-4 mb-5 justify-content-center contactresume">
-        <a href="/assets/images/resume/resume.pdf" download="/resume.pdf"><button className=" contactresbtn">Resume</button></a>
+        <a href="/assets/images/resume/ResumeFSD.pdf" download="/ResumeFSD.pdf"><button className=" contactresbtn">Resume</button></a>
       </div>
     </div>
     <div className="col-lg-6">
