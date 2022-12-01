@@ -1,1 +1,1 @@
-export const env={api:"https://karthi-portfo.herokuapp.com"}
+export const env={api:"https://silver-kangaroo-tie.cyclic.app"}
