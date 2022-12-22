@@ -85,7 +85,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height:1050px;
+    min-height:1250px;
   }
   .skills{
     gap:50px 100px;
@@ -102,7 +102,7 @@
     width: 500px;
   }
   .imgsize{
-    height: 400px;
+    height: 600px;
   
   }
   .button{

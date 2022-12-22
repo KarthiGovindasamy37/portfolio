@@ -7,13 +7,21 @@ function Projects() {
 
     let projects=[
         {
-            image:"cmsapp.png",
+            image:"crm.png",
             title:"CRM APP",
-            description:"CRM app has authentication system of Login,Registration and Forgot password.The system has Admin and Employee level access control middlewares.If any leads or service requests are created in the system,it will trigger an email to the manager and admin.",
-            tools:["Context","Express","JWT","Bcryptjs","MongoDB"],
+            description:"CRM app has JWT authentication system.It has Admin and Employee level access control middlewares.App features all CRUD operations.If any leads or service requests are created in the system,it will trigger an email to the manager and admin.",
+            tools:["React","Context","Express","JWT","Bcryptjs","MongoDB"],
             github:"https://github.com/KarthiGovindasamy37/crm-app",
             netlify:"https://melodious-lily-b14447.netlify.app/"
-        }
+        },
+        {
+          image:"cmsapp.png",
+          title:"CMS SOFTWARE",
+          description:"MySite.com is a multi page web application with Razorpay payment integration.State of the application is fully managed by Redux.It has the system of Login,Registration and Forgot password.",
+          tools:["React","Redux","Razorpay","Express","JWT","Bcryptjs","Nodemailer","MongoDB"],
+          github:"https://github.com/KarthiGovindasamy37/cms-software",
+          netlify:"https://delightful-chaja-15b83a.netlify.app/"
+      }
     ]
   return (
     <div className="projectsbg">
@@ -22,8 +30,8 @@ function Projects() {
         {
             projects.map(ele=>{
                 return(
-                    <div className='col-md-6 d-flex justify-content-center'>
-                    <div className="card mb-5 " style={{maxWidth: "540px"}}>
+                    <div className='col-lg-6 d-flex justify-content-center'>
+                    <div className="card mb-5 col-10 " >
                       <div className="row g-0">
                         <div className="col-md-4 project-img-div">
                           <img src={`/assets/images/${ele.image}`} style={{height:"100%",width:"100%"}} className="img-fluid rounded-start projectimg p-1" alt="..."/>
