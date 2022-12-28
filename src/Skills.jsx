@@ -52,11 +52,13 @@ function Skills() {
     let certifications=[
         {
             title:"German A1",
-            picture:"/assets/images/aws.png"
+            picture:"GermanA1.jpg",
+            alter:"German A1 Certificate"
         },
         {
             title:"German A2",
-            picture:"/assets/images/node.png"
+            picture:"GermanA2.jpg",
+            alter:"German A2 Certificate"
         }
     ]
   return (
@@ -86,7 +88,7 @@ function Skills() {
         certifications.map((ele,indx)=>{
             return(
                 <div className={`carousel-item ${indx===0 ? `active` : `` }`}>
-                <img src={ele.picture} className="d-block w-100 imgsize" alt="..."/>
+                <img src={`/assets/images/${ele.picture}`} className="d-block w-100 imgsize" alt={`${ele.alter}`}/>
                 <div className="carousel-caption d-none d-md-block">
               <h5 className='text-black'>{ele.title}</h5>
             </div>
