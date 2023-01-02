@@ -13,7 +13,7 @@ function Projects() {
             tools:["React","Context","Express","JWT","Bcryptjs","MongoDB"],
             frontend:"https://github.com/KarthiGovindasamy37/crm-app",
             backend:"https://github.com/KarthiGovindasamy37/nodejs-crm-app",
-            preview:"https://melodious-lily-b14447.netlify.app/",
+            preview:"https://super-dodol-58d830.netlify.app",
             alter:"CRM APP"
         },
         {
