@@ -59,6 +59,11 @@ function Skills() {
             title:"German A2",
             picture:"GermanA2.jpg",
             alter:"German A2 Certificate"
+        },
+        {
+          title:"Experience Certificate",
+          picture:"ExpCer.jpg",
+          alter:"Experience Certificate"
         }
     ]
   return (
