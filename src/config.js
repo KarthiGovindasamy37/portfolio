@@ -1,1 +1,1 @@
-export const env={api:"https://silver-kangaroo-tie.cyclic.app"}
+export const env={api:"https://portfolio-9den.onrender.com"}
