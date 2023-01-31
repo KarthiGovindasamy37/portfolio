@@ -52,7 +52,7 @@ function Projects() {
         
     <div className="d-flex flex-wrap pt-5  ">
         {
-            projects.map(ele=>{
+            projects.map((ele,idx)=>{
                 return(
                     <div className='col-lg-6 d-flex justify-content-center'>
                     <div className="card mb-5 col-10 " >
@@ -78,7 +78,7 @@ function Projects() {
                 
                             </div>
                             
-                            <div className="d-flex mt-2 ">
+                            <div className={`d-flex ${idx === 3 ? `mt-5`: `mt-2`}`}>
                              <div><a href={`${ele.frontend}`} target="_blank"><FontAwesomeIcon  className=" projecticon ms-4" icon={faGithub} size="2x" /></a>
                              <h6 className='text-center ms-1'>Frontend</h6>
                              </div>
