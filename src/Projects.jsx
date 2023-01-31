@@ -30,7 +30,7 @@ function Projects() {
           image:"cmsapp.png",
           title:"CMS SOFTWARE",
           description:"MySite.com is a multi page web application with Razorpay payment integration.State of the application is fully managed by Redux.It has the system of Login,Registration and Forgot password.",
-          tools:["React","Redux","Razorpay","Express","JWT","Bcryptjs","Nodemailer","MongoDB"],
+          tools:["React","Redux","Razorpay","Express","JWT","Bcryptjs","MongoDB"],
           frontend:"https://github.com/KarthiGovindasamy37/cms-software",
           backend:"https://github.com/KarthiGovindasamy37/nodejs-cms-software",
           preview:"https://delightful-chaja-15b83a.netlify.app",
