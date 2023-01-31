@@ -6,6 +6,16 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 function Projects() {
 
     let projects=[
+      {
+            image:"diva.png",
+            title:"ECOMMERCE APP",
+            description:"Diva is an ecommerce app,it has search and filter options.App is integrated with razorpay payment gateway.It has JWT authentication system and uses bcryptjs to hash password.State of the application is fully managed by redux tool kit.",
+            tools:["React","ReduxToolKit","Razorpay","Express","JWT","Nodemailer","MongoDB"],
+            frontend:"https://github.com/KarthiGovindasamy37/ecommerce",
+            backend:"https://github.com/KarthiGovindasamy37/Ecommerce.js",
+            preview:"https://taupe-syrniki-a56bd2.netlify.app",
+            alter:"ECOMMERCE APP"
+        },
         {
             image:"crm.png",
             title:"CRM APP",
