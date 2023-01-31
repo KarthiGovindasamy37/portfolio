@@ -78,7 +78,7 @@ function Projects() {
                 
                             </div>
                             
-                            <div className={`d-flex ${idx === 3 ? `mt-5`: `mt-2`}`}>
+                            <div className={`d-flex ${idx === 3 ? `mt-5 pt-2`: `mt-2`}`}>
                              <div><a href={`${ele.frontend}`} target="_blank"><FontAwesomeIcon  className=" projecticon ms-4" icon={faGithub} size="2x" /></a>
                              <h6 className='text-center ms-1'>Frontend</h6>
                              </div>
