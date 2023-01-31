@@ -9,7 +9,7 @@ function Projects() {
       {
             image:"diva.png",
             title:"ECOMMERCE APP",
-            description:"Diva is an ecommerce app,it has search and filter options.App is integrated with razorpay payment gateway.It has JWT authentication system and uses bcryptjs to hash password. State of the application is fully managed by redux tool kit.",
+            description:"Diva is an ecommerce app,it has search and filter options.App is integrated with razorpay payment gateway.It has JWT authentication system and uses bcryptjs. State of the application is fully managed by redux tool kit.",
             tools:["React","ReduxToolKit","Razorpay","Express","JWT","Nodemailer","MongoDB"],
             frontend:"https://github.com/KarthiGovindasamy37/ecommerce",
             backend:"https://github.com/KarthiGovindasamy37/Ecommerce.js",
