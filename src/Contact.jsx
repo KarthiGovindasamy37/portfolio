@@ -53,11 +53,11 @@ function Contact() {
   return (
     <div className="contactbg">
   <div className="container">
-  <h2 className="text pt-3">Let's Build Something Together</h2>
+  <h2 className="text pt-2">Let's Build Something Together</h2>
   <br/><br/>
   <div className="row">
     <div className="col-lg-6 contactcol">
-      <h3 className="text ms-2">Karthi Govindasamy</h3>
+      <h3 className="text">Karthi Govindasamy</h3>
       <br/>
       <div className="d-flex">
         <FontAwesomeIcon  className="iconcolor mt-2" icon={faLocationDot} size="1x" />
