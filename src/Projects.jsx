@@ -17,6 +17,16 @@ function Projects() {
             alter:"ECOMMERCE APP"
         },
         {
+          image:"chatapp.png",
+          title:"REALTIME CHAT APP",
+          description:"LustigeZeit is a realtime chatting application, it uses WebSocket to send data to the client instantly. It uses Mongoose for creating schema and Redux tool kit for managing the entire state of the app.",
+          tools:["React","ReduxToolKit","Express","Socket.io","Mongoose","MongoDB"],
+          frontend:"https://github.com/KarthiGovindasamy37/realtimechat",
+          backend:"https://github.com/KarthiGovindasamy37/realtimechat.js",
+          preview:"https://imaginative-semifreddo-086b75.netlify.app",
+          alter:"CHAT APP"
+      },
+        {
             image:"crm.png",
             title:"CRM APP",
             description:"Epic CRM is an intranet web app that allows only Admin or Manager to create users.It has JWT authentication system and also Admin and Employee level access control middlewares.App features all CRUD operations.If any lead created it will trigger email to the admin and manager.",
@@ -65,7 +75,7 @@ function Projects() {
                             <h5 className="card-title">{ele.title}</h5>
                             <p className="card-text">{ele.description}</p>
                             <div className="d-flex flex-wrap">
-                                <div className='col-4'><h6>tools used :</h6></div>
+                                <div className='col-4'><h6>Tools used :</h6></div>
                                 <div className='col-8 d-flex flex-wrap '>
                                 {
                                 ele.tools.map((ele)=>{
@@ -78,7 +88,7 @@ function Projects() {
                 
                             </div>
                             
-                            <div className={`d-flex ${idx === 3 ? `mt-5 pt-2`: `mt-2`}`}>
+                            <div className={`d-flex ${idx === 3 ? `mt-4 pt-2`: `mt-2`}`}>
                              <div><a href={`${ele.frontend}`} target="_blank"><FontAwesomeIcon  className=" projecticon ms-4" icon={faGithub} size="2x" /></a>
                              <h6 className='text-center ms-1'>Frontend</h6>
                              </div>
