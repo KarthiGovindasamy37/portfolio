@@ -39,7 +39,7 @@ function Projects() {
         {
           image:"cmsapp.png",
           title:"CMS SOFTWARE",
-          description:"MySite.com is a multi page web application with Razorpay payment integration.State of the application is fully managed by Redux.It has the system of Login,Registration and Forgot password.",
+          description:"MySite.com is a multi page web application with Razorpay payment integration.It has the system of Login,Registration and Forgot password.Based on the login state in the local storage it routes to the relevant page.",
           tools:["React","Redux","Razorpay","Express","JWT","Bcryptjs","MongoDB"],
           frontend:"https://github.com/KarthiGovindasamy37/cms-software",
           backend:"https://github.com/KarthiGovindasamy37/nodejs-cms-software",
@@ -74,7 +74,7 @@ function Projects() {
                           <div className="card-body">
                             <h5 className="card-title">{ele.title}</h5>
                             <p className="card-text">{ele.description}</p>
-                            <div className="d-flex flex-wrap">
+                            <div className="d-flex">
                                 <div className='col-4'><h6>Tools used :</h6></div>
                                 <div className='col-8 d-flex flex-wrap '>
                                 {
@@ -88,7 +88,7 @@ function Projects() {
                 
                             </div>
                             
-                            <div className={`d-flex ${idx === 3 ? `mt-4 pt-2`: `mt-2`}`}>
+                            <div className={`d-flex ${idx === 1 ? `mt-2`: idx === 3 ? `mt-4 pt-2`: `mt-2`}`}>
                              <div><a href={`${ele.frontend}`} target="_blank"><FontAwesomeIcon  className=" projecticon ms-4" icon={faGithub} size="2x" /></a>
                              <h6 className='text-center ms-1'>Frontend</h6>
                              </div>

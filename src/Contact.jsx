@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLocationDot, faPhone, faTruckFast } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -9,6 +9,8 @@ import { env } from './config'
 import { toast } from 'react-toastify'
 
 function Contact() {
+
+  const [loading,setLoading] = useState(false)
 
   let formik=useFormik({
     initialValues:{
@@ -34,8 +36,10 @@ function Contact() {
     },
     onSubmit:async(values)=>{
       try {
+        setLoading(true)
         let message=await axios.post(`${env.api}/portfolio`,values)
         if(message.status===200){
+          setLoading(false)
           toast.success(message.data.message,{toastId:"1"})
           formik.setValues({
             name:"",
@@ -46,6 +50,7 @@ function Contact() {
         }
         
       } catch (error) {
+        setLoading(false)
         toast.error(error.response.data.message,{toastId:"2"})
       }
     }
@@ -107,7 +112,12 @@ function Contact() {
         value={formik.values.message}></textarea>
         <span style={{color:"violet"}}>{formik.errors.message}</span>
       <div className="mt-3 pb-5">
-        <button type="submit" disabled={!formik.isValid} className="btn btn-primary "><FontAwesomeIcon icon={faTruckFast} /> Reach Out</button>
+        {
+          loading ?
+          <button type="submit" disabled className="btn btn-primary "><FontAwesomeIcon icon={faTruckFast} /> Reach Out</button>
+          :
+          <button type="submit" disabled={!formik.isValid} className="btn btn-primary "><FontAwesomeIcon icon={faTruckFast} /> Reach Out</button>
+        }
       </div>
       </form>
     </div>
