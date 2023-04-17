@@ -7,6 +7,17 @@ function Projects() {
 
     let projects=[
       {
+        image:"chatapp.png",
+        title:"REAL-TIME CHAT APP",
+        description:"LustigeZeit is a real time chatting application, it uses WebSocket to send message,status of the message and online users to the client instantly. It uses Mongoose for creating schema and Redux tool kit for managing the entire state of the app.",
+        tools:["React","ReduxToolKit","Express","Socket.io","Mongoose","MongoDB"],
+        frontend:"https://github.com/KarthiGovindasamy37/realtimechat",
+        backend:"https://github.com/KarthiGovindasamy37/realtimechat.js",
+        socket : "https://github.com/KarthiGovindasamy37/realtimechatsocket.js",
+        preview:"https://imaginative-semifreddo-086b75.netlify.app",
+        alter:"CHAT APP"
+    },
+      {
             image:"diva.png",
             title:"ECOMMERCE APP",
             description:"Diva is an ecommerce app,it has search and filter options.App is integrated with razorpay payment gateway.It has JWT authentication system and uses bcryptjs. State of the application is fully managed by redux tool kit.",
@@ -16,16 +27,6 @@ function Projects() {
             preview:"https://taupe-syrniki-a56bd2.netlify.app",
             alter:"ECOMMERCE APP"
         },
-        {
-          image:"chatapp.png",
-          title:"REALTIME CHAT APP",
-          description:"LustigeZeit is a realtime chatting application, it uses WebSocket to send data to the client instantly. It uses Mongoose for creating schema and Redux tool kit for managing the entire state of the app.",
-          tools:["React","ReduxToolKit","Express","Socket.io","Mongoose","MongoDB"],
-          frontend:"https://github.com/KarthiGovindasamy37/realtimechat",
-          backend:"https://github.com/KarthiGovindasamy37/realtimechat.js",
-          preview:"https://imaginative-semifreddo-086b75.netlify.app",
-          alter:"CHAT APP"
-      },
         {
             image:"crm.png",
             title:"CRM APP",
@@ -88,13 +89,20 @@ function Projects() {
                 
                             </div>
                             
-                            <div className={`d-flex ${idx === 1 ? `mt-2`: idx === 3 ? `mt-4 pt-2`: `mt-2`}`}>
+                            <div className={`d-flex ${idx === 1 || idx === 3 ? `mt-4 pt-2`: `mt-2`}`}>
                              <div><a href={`${ele.frontend}`} target="_blank"><FontAwesomeIcon  className=" projecticon ms-4" icon={faGithub} size="2x" /></a>
                              <h6 className='text-center ms-1'>Frontend</h6>
                              </div>
                              <div className='ms-3'><a href={`${ele.backend}`} target="_blank"><FontAwesomeIcon  className=" projecticon ms-4" icon={faGithub} size="2x" /></a>
                              <h6 className='text-center ms-2'>Backend</h6>
                              </div>
+                             {
+                              idx === 0 ?
+                              <div className='ms-3'><a href={`${ele.socket}`} target="_blank"><FontAwesomeIcon  className=" projecticon ms-4" icon={faGithub} size="2x" /></a>
+                             <h6 className='text-center ms-2 ps-2'>Socket</h6>
+                             </div>
+                             : null
+                             }
                              <div>
                              <a href={`${ele.preview}`}target="_blank"><FontAwesomeIcon className=' ms-4 ps-3 projecticon' icon={ faArrowUpRightFromSquare} size="2x" /></a>
                              <h6 className='text-center ms-4'>Preview</h6>
